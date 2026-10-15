@@ -4,12 +4,18 @@
 separate audio recordings, press *Synchronize*, and Synker 2 lines everything up by its sound,
 ready for your editing software.
 
-Written in Rust. Windows 10/11 (64-bit).
+Written in Rust. Windows 10/11 (64-bit) and macOS 11 or later (Apple Silicon and Intel).
 
 ## Download
 
-Get the latest version from **[Releases](../../releases/latest)**, unzip it and run
-`Synker2.exe`. No installation needed.
+Get the latest version from **[Releases](../../releases/latest)**:
+
+- **Windows**: `Synker2-…-windows-x64.zip`. Unzip it and run `Synker2.exe`. No installation
+  needed.
+- **macOS**: `Synker2-…-macos-universal.zip`. Unzip it and move `Synker2.app` to
+  *Applications*. The app is not notarized by Apple yet, so the first time macOS blocks it:
+  right-click the app > *Open* > *Open*, or go to *System Settings > Privacy & Security* and
+  click *Open Anyway*.
 
 ## Features
 
@@ -33,7 +39,9 @@ Get the latest version from **[Releases](../../releases/latest)**, unzip it and 
 
 ## Requirements
 
-- **FFmpeg** (`ffmpeg` and `ffprobe`) available in your `PATH`, used to read the media.
+- **FFmpeg** (`ffmpeg` and `ffprobe`), used to read the media.
+  - Windows: install it (for example `winget install Gyan.FFmpeg`) so that it is in your `PATH`.
+  - macOS: `brew install ffmpeg` ([Homebrew](https://brew.sh)); Synker 2 finds it there.
 - For the live DaVinci Resolve features: **DaVinci Resolve Studio** running with external
   scripting enabled (*Preferences > System > General > External scripting using: Local*) and
   **Python 3** in your `PATH`.
