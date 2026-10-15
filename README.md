@@ -6,6 +6,10 @@ ready for your editing software.
 
 Written in Rust. Windows 10/11 (64-bit) and macOS 11 or later (Apple Silicon and Intel).
 
+![Synker 2 with a synchronized shoot: camera clips lined up on the field recorder](screenshots/main.png)
+
+![Export to Premiere Pro, EDIUS or DaVinci Resolve](screenshots/export.png)
+
 ## Download
 
 Get the latest version from **[Releases](../../releases/latest)**:
